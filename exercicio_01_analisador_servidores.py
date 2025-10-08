@@ -10,7 +10,7 @@ inventario_servidores = [
     {'nome': 'srv-dev-db-01', 'status': 'inativo', 'ambiente': 'desenvolvimento'},
 ]
 
-# 2. A FERRAMENTA: Uma função para guardar e reutilizar nossa lógica de filtro.
+# 2. A FERRAMENTA: Uma função para guardar e reutilizar lógica de filtro.
 def encontrar_servidores_criticos(inventario):
     """
     Recebe uma lista de servidores (dicionários) e retorna uma nova lista
@@ -30,10 +30,10 @@ def encontrar_servidores_criticos(inventario):
 
 # --- EXECUÇÃO DO SCRIPT ---
 
-# 4. A AÇÃO: Usamos nossa ferramenta, passando os dados para ela.
+# 4. A AÇÃO: Usamos a ferramenta, passando os dados para ela.
 servidores_para_monitorar = encontrar_servidores_criticos(inventario_servidores)
 
-# 5. O RESULTADO: Exibimos o que encontramos de forma clara.
+# 5. O RESULTADO: Exibe de forma clara.
 print("--- Relatório de Monitoramento ---")
 print("Servidores de produção atualmente ativos:")
 print(servidores_para_monitorar)
